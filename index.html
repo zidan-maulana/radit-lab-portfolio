@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio Website - Radit | Network Engineer Portfolio & Dokumentasi Jaringan">
+  <title>Radit | Network Engineer Portfolio</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- CSS Utama -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       SECTION 1: NAVBAR (NAVIGASI)
+       ========================================== -->
+  <header class="navbar-header" id="navbar">
+    <div class="navbar-container">
+      
+      <!-- Menu Navigasi di tengah -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Tombol CTA di ujung kanan & Hamburger Menu -->
+      <div class="navbar-actions">
+        <!-- GANTI: Link Call/Kontak -->
+        <a href="#contact" class="btn-nav-cta">
+          <span>Let's Connect</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"/>
+            <polyline points="7 7 17 7 17 17"/>
+          </svg>
+        </a>
+        
+        <!-- Tombol Hamburger untuk Layar Mobile -->
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu Navigasi" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section fade-in-section">
+      <div class="hero-container">
+        <!-- Kolom Kiri: Statistik, Sapaan & Scroll Down -->
+        <div class="hero-left-content">
+          
+          <!-- Baris Statistik Sejajar Horizontal -->
+          <div class="hero-stats-wrapper">
+            <!-- GANTI: Angka & Label Statistik 1 -->
+            <div class="hero-stat-item">
+              <!-- GANTI: isi angka realistis sesuai pengalaman asli Radit -->
+              <span class="hero-stat-num">+200</span>
+              <span class="hero-stat-label">Proyek Selesai</span>
+            </div>
+            <!-- GANTI: Angka & Label Statistik 2 -->
+            <div class="hero-stat-item">
+              <!-- GANTI: isi angka realistis sesuai pengalaman asli Radit -->
+              <span class="hero-stat-num">+50</span>
+              <span class="hero-stat-label">Klien Ditangani</span>
+            </div>
+          </div>
+
+          <!-- Sapaan & Sub-teks Utama -->
+          <div class="hero-greeting-group">
+            <!-- GANTI: Sapaan Hero -->
+            <h1 class="hero-greeting-title">Halo</h1>
+            <!-- GANTI: Deskripsi Singkat Hero -->
+            <!-- NAMA: pastikan konsisten, gunakan format yang sama di semua section (nama panggilan ATAU nama lengkap, pilih satu) -->
+            <p class="hero-subtitle">— It's Radit, seorang Network Engineer</p>
+          </div>
+
+          <!-- Scroll down di kiri bawah -->
+          <div class="hero-scroll-indicator">
+            <a href="#about" class="scroll-link">Scroll down &darr;</a>
+          </div>
+
+        </div>
+
+        <!-- Kolom Kanan: Foto Portrait Besar -->
+        <div class="hero-right-visual">
+          <div class="hero-img-container">
+            <!-- GANTI: Sumber Foto Utama Radit -->
+            <img src="assets/images/hero-photo.svg" alt="Foto Utama Radit" class="hero-main-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 3: ABOUT ME
+         ========================================== -->
+    <section id="about" class="about-section fade-in-section">
+      <div class="about-container">
+        
+        <!-- Judul Kiri Atas & Deskripsi Kiri Bawah -->
+        <div class="about-left-layout">
+          <div>
+            <h2 class="about-title">About Me</h2>
+            <!-- GANTI: Paragraf Deskripsi Profil -->
+            <p class="about-desc">
+              Saya adalah seorang Network Engineer berpengalaman yang fokus pada perancangan, instalasi, dan troubleshooting infrastruktur jaringan LAN/WAN untuk menjamin konektivitas korporasi yang stabil dan aman.
+            </p>
+          </div>
+          
+          <div class="about-skills">
+            <span class="skills-cat-title">Skills &amp; Expertise</span>
+            <!-- KONFIRMASI: sesuaikan dengan skill asli Radit, tambah/kurangi sesuai kebutuhan -->
+            <div class="skills-grid">
+              <span class="skill-pill">LAN/WAN Topology</span>
+              <span class="skill-pill">Cisco &amp; Mikrotik</span>
+              <span class="skill-pill">VLAN &amp; Routing</span>
+              <span class="skill-pill">Network Security</span>
+              <span class="skill-pill">PRTG &amp; Zabbix</span>
+              <span class="skill-pill">Wireshark Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kolom Tengah: Card Persentase Keberhasilan & Foto Portrait Gelap di Bawahnya -->
+        <div class="about-center-card-col">
+          <div class="about-stat-box">
+            <!-- GANTI: Nama Lengkap -->
+            <!-- NAMA: pastikan konsisten, gunakan format yang sama di semua section (nama panggilan ATAU nama lengkap, pilih satu) -->
+            <h3 class="about-box-name">M. Kaisar Radit</h3>
+            <!-- GANTI: Slogan / Prinsip Hidup -->
+            <p class="about-box-slogan">"Connecting nodes, securing networks, bridging possibilities."</p>
+            
+            <!-- Foto di bawah tulisan card tengah -->
+            <div class="about-card-media">
+              <!-- GANTI: Gambar Portofolio Tambahan -->
+              <img src="assets/images/about-potret.svg" alt="Aktivitas Jaringan" class="about-card-img">
+            </div>
+
+            <!-- Tombol Unduh CV -->
+            <a href="assets/cv.pdf" class="btn-about-connect" download>
+              <span>Unduh CV</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Ikon Sosial Media (Pengganti Avatar) & Bullet Poin Sparkle -->
+        <div class="about-right-layout">
+          <!-- GANTI: Tautan Sosial Media Radit -->
+          <!-- KONFIRMASI: link akun mana yang aktif dan relevan (Instagram/LinkedIn/GitHub), hapus yang tidak dipakai -->
+          <div class="about-socials-wrapper">
+            <a href="https://linkedin.com" target="_blank" class="about-social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="about-social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="https://github.com" target="_blank" class="about-social-icon" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </a>
+            <a href="mailto:hello@radit.com" class="about-social-icon" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- KONFIRMASI: sesuaikan dengan pengalaman nyata -->
+          <div class="about-bullets">
+            <!-- Bullet Point 1 -->
+            <div class="about-bullet-item">
+              <div class="bullet-sparkle">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                  <path d="M12 0L14.6 9.4L24 12L14.6 14.6L12 24L9.4 14.6L0 12L9.4 9.4L12 0Z"/>
+                </svg>
+              </div>
+              <p class="bullet-text">Perancangan topologi LAN/WAN kompleks &amp; hemat biaya untuk gedung multi-lantai.</p>
+            </div>
+            <!-- Bullet Point 2 -->
+            <div class="about-bullet-item">
+              <div class="bullet-sparkle">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                  <path d="M12 0L14.6 9.4L24 12L14.6 14.6L12 24L9.4 14.6L0 12L9.4 9.4L12 0Z"/>
+                </svg>
+              </div>
+              <p class="bullet-text">Penerapan standar keamanan Cisco &amp; Mikrotik dengan dokumentasi topologi yang rapi.</p>
+            </div>
+            <!-- Bullet Point 3 -->
+            <div class="about-bullet-item">
+              <div class="bullet-sparkle">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                  <path d="M12 0L14.6 9.4L24 12L14.6 14.6L12 24L9.4 14.6L0 12L9.4 9.4L12 0Z"/>
+                </svg>
+              </div>
+              <p class="bullet-text">Koordinasi lintas tim (PM &amp; teknisi) untuk memastikan target implementasi tepat waktu.</p>
+            </div>
+            <!-- Bullet Point 4 -->
+            <div class="about-bullet-item">
+              <div class="bullet-sparkle">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                  <path d="M12 0L14.6 9.4L24 12L14.6 14.6L12 24L9.4 14.6L0 12L9.4 9.4L12 0Z"/>
+                </svg>
+              </div>
+              <p class="bullet-text">Monitoring jaringan real-time &amp; analisis mendalam dengan PRTG, Zabbix, &amp; Wireshark.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 4: LATEST WORKS (PORTFOLIO GRID)
+         ========================================== -->
+    <!-- LATEST WORKS: isi dengan proyek utama, jangan duplikat dari Video Dokumentasi -->
+    <section id="portfolio" class="latest-works-section fade-in-section">
+      <div class="works-container">
+        <!-- Header -->
+        <div class="section-center-header">
+          <span class="center-subtitle">• Portfolio</span>
+          <h2 class="center-title">Karya Terbaru</h2>
+        </div>
+
+        <!-- Grid 3 Kolom -->
+        <div class="latest-works-grid">
+          
+          <!-- Kartu Proyek 1 -->
+          <!-- GANTI: Karya Terbaru 1 -->
+          <!-- GANTI: isi nama project & klien asli, atau samarkan jika confidential -->
+          <div class="work-card">
+            <div class="work-img-container">
+              <img src="assets/images/work-1.svg" alt="Instalasi VLAN Corporate" class="work-img">
+            </div>
+            <div class="work-info">
+              <h3 class="work-title">Instalasi VLAN Corporate</h3>
+              <p class="work-client">Untuk PT. Merdeka Sejahtera</p>
+            </div>
+          </div>
+
+          <!-- Kartu Proyek 2 -->
+          <!-- GANTI: Karya Terbaru 2 -->
+          <!-- GANTI: isi nama project & klien asli, atau samarkan jika confidential -->
+          <div class="work-card">
+            <div class="work-img-container">
+              <img src="assets/images/work-2.svg" alt="Setup VPN Multi-Tunnel" class="work-img">
+            </div>
+            <div class="work-info">
+              <h3 class="work-title">Setup VPN Multi-Tunnel</h3>
+              <p class="work-client">Untuk Kantor Notaris Cikini</p>
+            </div>
+          </div>
+
+          <!-- Kartu Proyek 3 -->
+          <!-- GANTI: Karya Terbaru 3 -->
+          <!-- GANTI: isi nama project & klien asli, atau samarkan jika confidential -->
+          <div class="work-card">
+            <div class="work-img-container">
+              <img src="assets/images/work-3.svg" alt="Redundancy Network Setup" class="work-img">
+            </div>
+            <div class="work-info">
+              <h3 class="work-title">Redundancy Network Setup</h3>
+              <p class="work-client">Untuk ISP Lokallink Jakarta</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Navigasi Bawah Grid -->
+        <div class="works-bottom-nav">
+          <a href="#" class="works-nav-link">Lihat Lainnya</a>
+          <span class="nav-divider">|</span>
+          <a href="#" class="works-nav-link">Selengkapnya</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 5: VIDEO DOKUMENTASI (HORIZONTAL SCROLL)
+         ========================================== -->
+    <section class="horizontal-preview-section fade-in-section">
+      <div class="video-doc-header">
+        <span class="center-subtitle">• Behind The Work</span>
+        <h2 class="center-title">Video Dokumentasi</h2>
+        <p class="video-doc-desc">Cuplikan proses kerja dan dokumentasi lapangan dari berbagai proyek jaringan yang telah saya tangani.</p>
+      </div>
+      <div class="preview-scroll-wrapper">
+        
+        <!-- Video Slide 1 -->
+        <!-- GANTI: isi judul video & klien asli, atau samarkan jika confidential -->
+        <div class="preview-slide">
+          <div class="preview-media video-placeholder">
+            <!-- GANTI: masukkan iframe YouTube unlisted di sini setelah video tersedia, gunakan parameter ?modestbranding=1&rel=0 -->
+            <!-- Contoh: <iframe src="https://www.youtube.com/embed/VIDEO_ID?modestbranding=1&rel=0" frameborder="0" allowfullscreen></iframe> -->
+            <div class="video-play-overlay">
+              <div class="video-play-btn">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                  <polygon points="8,5 19,12 8,19"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="preview-caption">
+            <h3 class="preview-proj-title">Dokumentasi Instalasi Jaringan Kantor A</h3>
+            <p class="preview-proj-client">Untuk PT. Solusi Digital Utama</p>
+          </div>
+        </div>
+
+        <!-- Video Slide 2 -->
+        <!-- GANTI: isi judul video & klien asli, atau samarkan jika confidential -->
+        <div class="preview-slide">
+          <div class="preview-media video-placeholder">
+            <!-- GANTI: masukkan iframe YouTube unlisted di sini setelah video tersedia, gunakan parameter ?modestbranding=1&rel=0 -->
+            <div class="video-play-overlay">
+              <div class="video-play-btn">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                  <polygon points="8,5 19,12 8,19"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="preview-caption">
+            <h3 class="preview-proj-title">Behind The Scenes: Setup Wireless Multi-Lantai</h3>
+            <p class="preview-proj-client">Untuk Universitas Bina Bangsa</p>
+          </div>
+        </div>
+
+        <!-- Video Slide 3 -->
+        <!-- GANTI: isi judul video & klien asli, atau samarkan jika confidential -->
+        <div class="preview-slide">
+          <div class="preview-media video-placeholder">
+            <!-- GANTI: masukkan iframe YouTube unlisted di sini setelah video tersedia, gunakan parameter ?modestbranding=1&rel=0 -->
+            <div class="video-play-overlay">
+              <div class="video-play-btn">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                  <polygon points="8,5 19,12 8,19"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="preview-caption">
+            <h3 class="preview-proj-title">Dokumentasi Migrasi Infrastruktur Cloud</h3>
+            <p class="preview-proj-client">Untuk Data Center Global Indo</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 5: EXPERIENCE (EXPLORE MY JOURNEY)
+         ========================================== -->
+    <section id="experience" class="journey-section fade-in-section">
+      <div class="journey-container">
+        
+        <!-- Header Atas (Kiri Judul, Kanan Paragraf + Link) -->
+        <div class="journey-header">
+          <div class="journey-header-left">
+            <span class="journey-subtitle">• Pengalaman</span>
+            <h2 class="journey-title">Jelajahi Perjalanan <br> Karir Saya</h2>
+          </div>
+          <div class="journey-header-right">
+            <!-- GANTI: Ringkasan Pengalaman -->
+            <!-- GANTI [X] sesuai jumlah tahun pengalaman asli, samakan dengan rentang tahun di timeline di bawah -->
+            <p class="journey-intro-text">
+              [X] tahun berkarir menangani tantangan jaringan dan mengoptimalkan konektivitas di berbagai sektor industri.
+            </p>
+            <a href="#contact" class="journey-cta-link">
+              <span>Let's Connect</span>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- List Horizontal Pengalaman Kerja -->
+        <!-- GANTI: isi nama perusahaan asli tempat Radit bekerja -->
+        <div class="journey-list">
+          
+          <!-- Baris 1 -->
+          <!-- GANTI: Pengalaman 1 -->
+          <div class="journey-row">
+            <div class="row-company-col">
+              <h3 class="row-company-name">PT. Solusi Jaringan Nusantara</h3>
+              <span class="row-date">Januari 2024 – Sekarang</span>
+            </div>
+            <div class="row-desc-col">
+              <h4 class="row-role">Senior Network Technician</h4>
+              <p class="row-desc-detail">Memimpin instalasi infrastruktur switch Cisco, setup BGP routing, serta optimalisasi server firewall internal korporat.</p>
+            </div>
+            <div class="row-tags-col">
+              <span class="tag-pill">Jaringan</span>
+              <span class="tag-pill">Instalasi</span>
+            </div>
+          </div>
+
+          <!-- Baris 2 -->
+          <!-- GANTI: Pengalaman 2 -->
+          <div class="journey-row">
+            <div class="row-company-col">
+              <h3 class="row-company-name">PT. Data Tekno Global</h3>
+              <span class="row-date">Maret 2023 – Desember 2023</span>
+            </div>
+            <div class="row-desc-col">
+              <h4 class="row-role">Network Support Engineer</h4>
+              <p class="row-desc-detail">Menangani troubleshooting downtime server, mengonfigurasi VLAN, serta memantau trafik jaringan multi-cabang.</p>
+            </div>
+            <div class="row-tags-col">
+              <span class="tag-pill">Support</span>
+              <span class="tag-pill">VLAN</span>
+            </div>
+          </div>
+
+          <!-- Baris 3 -->
+          <!-- GANTI: Pengalaman 3 -->
+          <div class="journey-row">
+            <div class="row-company-col">
+              <h3 class="row-company-name">CV. Sinergi Integra</h3>
+              <span class="row-date">Juli 2022 – Februari 2023</span>
+            </div>
+            <div class="row-desc-col">
+              <h4 class="row-role">Junior Technician</h4>
+              <p class="row-desc-detail">Melakukan penarikan structured cabling (UTP & Fiber Optic) serta terminasi patch panel gedung perkantoran.</p>
+            </div>
+            <div class="row-tags-col">
+              <span class="tag-pill">Cabling</span>
+              <span class="tag-pill">Hardware</span>
+            </div>
+          </div>
+
+          <!-- Baris 4 -->
+          <!-- GANTI: Pengalaman 4 -->
+          <div class="journey-row">
+            <div class="row-company-col">
+              <h3 class="row-company-name">PT. Global Data Connectivity</h3>
+              <span class="row-date">Juni 2021 – Mei 2022</span>
+            </div>
+            <div class="row-desc-col">
+              <h4 class="row-role">Intern Network Engineer</h4>
+              <p class="row-desc-detail">Membantu Senior Technician melakukan survei wireless coverage serta konfigurasi access point Mikrotik di lapangan.</p>
+            </div>
+            <div class="row-tags-col">
+              <span class="tag-pill">Wireless</span>
+              <span class="tag-pill">Mikrotik</span>
+            </div>
+          </div>
+
+          <!-- SISIPAN FOTO DAN PARAGRAF DI ANTARA BARIS 4 DAN FOOTER/SELANJUTNYA -->
+          <div class="journey-insert-block">
+            <div class="journey-insert-images">
+              <!-- GANTI: 3 Gambar Sisipan Portfolio / Aktivitas Lapangan -->
+              <img src="assets/images/exp-thumb-1.svg" alt="Aktivitas Jaringan 1" class="insert-thumb">
+              <img src="assets/images/exp-thumb-2.svg" alt="Aktivitas Jaringan 2" class="insert-thumb">
+              <img src="assets/images/exp-thumb-3.svg" alt="Aktivitas Jaringan 3" class="insert-thumb">
+            </div>
+            <div class="journey-insert-content">
+              <!-- GANTI: Teks Sisipan Perjalanan -->
+              <p class="journey-insert-desc">
+                Setiap proyek lapangan memberikan saya wawasan tentang pentingnya koordinasi yang matang, kerapian instalasi kabel, serta dokumentasi topologi logis demi memudahkan maintenance masa depan.
+              </p>
+              <a href="#portfolio" class="btn-circle-arrow" aria-label="Lihat Portofolio">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         SECTION 9: GET IN TOUCH (CONTACT)
+         ========================================== -->
+    <section id="contact" class="contact-section fade-in-section">
+      <div class="contact-container">
+        <div class="contact-layout">
+
+          <!-- Kolom Kiri: Info Kontak -->
+          <div class="contact-info-col">
+            <h2 class="contact-heading">Get in touch</h2>
+
+            <div class="contact-details">
+              <div class="contact-detail-group">
+                <span class="contact-detail-label">Email:</span>
+                <!-- GANTI: Alamat Email -->
+                <a href="mailto:hello@radit.com" class="contact-detail-value">hello@radit.com</a>
+              </div>
+              <div class="contact-detail-group">
+                <span class="contact-detail-label">Phone:</span>
+                <!-- KONFIRMASI ke client: apakah nomor HP boleh ditampilkan publik? Jika tidak, hapus baris ini -->
+                <!-- GANTI: Nomor Telepon -->
+                <a href="tel:+6281234567890" class="contact-detail-value">+62 812 3456 7890</a>
+              </div>
+              <div class="contact-detail-group">
+                <span class="contact-detail-label">Location:</span>
+                <!-- GANTI: Lokasi -->
+                <span class="contact-detail-value">Jakarta, Indonesia</span>
+              </div>
+            </div>
+
+            <!-- Sosial Media Kiri Bawah -->
+            <!-- KONFIRMASI: link akun mana yang aktif dan relevan (Instagram/LinkedIn/GitHub), hapus yang tidak dipakai -->
+            <div class="contact-socials">
+              <span class="contact-detail-label">Follow us</span>
+              <div class="contact-social-icons">
+                <a href="#" aria-label="Instagram" class="contact-social-link">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                <a href="#" aria-label="LinkedIn" class="contact-social-link">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="#" aria-label="GitHub" class="contact-social-link">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <a href="#" aria-label="Email" class="contact-social-link">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kolom Kanan: Form -->
+          <div class="contact-form-col">
+            <form class="contact-form" id="contactForm" method="POST" data-netlify="true" name="contact" novalidate>
+              <input type="hidden" name="form-name" value="contact">
+              <p class="hidden" style="display:none"><label>Jangan isi ini: <input name="bot-field"></label></p>
+              <div class="contact-form-row">
+                <div class="contact-form-group">
+                  <label for="contact-name" class="contact-label">Your Name</label>
+                  <input type="text" id="contact-name" name="name" placeholder="Your full name" class="contact-input" required>
+                </div>
+                <div class="contact-form-group">
+                  <label for="contact-email" class="contact-label">Email address</label>
+                  <input type="email" id="contact-email" name="email" placeholder="Your email address" class="contact-input" required>
+                </div>
+              </div>
+              <div class="contact-form-group">
+                <label for="contact-message" class="contact-label">Message</label>
+                <textarea id="contact-message" name="message" placeholder="Write something..." class="contact-textarea" rows="6" required></textarea>
+              </div>
+              <button type="submit" class="contact-submit-btn">Send Message</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       SECTION 10: FOOTER
+       ========================================== -->
+  <footer class="footer-bar">
+    <div class="footer-container">
+
+      <!-- Baris Info Atas: 2 Kolom -->
+      <div class="footer-top-row">
+        <!-- Kiri: Spesialisasi -->
+        <div class="footer-top-left">
+          <span>Network Engineering</span>
+        </div>
+        <!-- Kanan: Lokasi + Tahun -->
+        <div class="footer-top-right">
+          <span>Jakarta, Indonesia</span>
+          <span>2025</span>
+        </div>
+      </div>
+
+      <!-- Teks Besar di Tengah -->
+      <div class="footer-name-block">
+        <span class="footer-big-name">Let's Work Together</span>
+      </div>
+
+      <!-- Baris Bawah: Link + Email + Copyright -->
+      <div class="footer-bottom-row">
+        <div class="footer-bottom-left">
+          <a href="#contact" class="footer-bottom-link">Contact</a>
+          <a href="#about" class="footer-bottom-link">About</a>
+          <a href="#portfolio" class="footer-bottom-link">Portfolio</a>
+        </div>
+        <div class="footer-bottom-center">
+          <!-- GANTI: Email Kontak Client -->
+          <a href="mailto:hello@radit.com" class="footer-bottom-email">hello@radit.com</a>
+        </div>
+        <div class="footer-bottom-right">
+          <!-- NAMA: pastikan konsisten, gunakan format yang sama di semua section (nama panggilan ATAU nama lengkap, pilih satu) -->
+          <span class="footer-copy">&copy; 2025 M. Kaisar Radit. All rights reserved.</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JavaScript Utama -->
+  <script src="js/script.js"></script>
+</body>
+</html>

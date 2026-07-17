@@ -19,7 +19,6 @@ const SANITY_CONFIG = {
 };
 
 export async function fetchAllContent() {
-  console.log("FETCH ALL CONTENT DIPANGGIL");
   if (USE_MOCK) {
     // Simulasi delay jaringan (300ms) agar terasa realistis
     return new Promise((resolve) => {
@@ -95,8 +94,6 @@ export async function fetchAllContent() {
 
   const encodedQuery = encodeURIComponent(query);
   const url = `https://${projectId}.apicdn.sanity.io/v${apiVersion}/data/query/${dataset}?query=${encodedQuery}`;
-
-  console.log(url);
 
   try {
     const response = await fetch(url);

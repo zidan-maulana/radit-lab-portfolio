@@ -6,9 +6,6 @@
  */
 
 import { fetchAllContent } from './sanity-client.js';
-
-console.log("SCRIPT.JS BERHASIL DIMUAT");
-
 import {
   renderSeo,
   renderHero,

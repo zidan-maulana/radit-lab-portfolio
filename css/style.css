@@ -1181,13 +1181,7 @@ img {
   transform: translateY(-2px);
 }
 
-.btn-load-more svg {
-  transition: transform var(--transition-smooth);
-}
 
-.btn-load-more.active svg {
-  transform: rotate(180deg);
-}
 
 /* Sembunyikan proyek dari baris kedua ke bawah secara default */
 .latest-works-grid .work-card:nth-child(n+4) {

@@ -1,0 +1,33 @@
+# ================================
+# Dependencies
+# ================================
+node_modules/
+
+# ================================
+# Sanity Studio Cache & Build
+# ================================
+studio/.sanity/
+studio/dist/
+
+# ================================
+# OS Generated Files
+# ================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ================================
+# IDE / Editor
+# ================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ================================
+# Environment Variables
+# ================================
+.env
+.env.local
+.env.production

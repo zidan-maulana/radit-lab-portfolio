@@ -1156,24 +1156,59 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-.works-nav-link {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--text-secondary);
+.btn-load-more {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-.works-nav-link:hover {
+  font-size: 0.95rem;
+  font-weight: 600;
   color: var(--text-primary);
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 2rem;
+  border-radius: var(--border-radius-pill);
+  cursor: pointer;
+  transition: var(--transition-smooth);
 }
 
-.nav-divider {
-  color: var(--text-muted);
+.btn-load-more:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+  transform: translateY(-2px);
+}
+
+.btn-load-more svg {
+  transition: transform var(--transition-smooth);
+}
+
+.btn-load-more.active svg {
+  transform: rotate(180deg);
+}
+
+/* Sembunyikan proyek dari baris kedua ke bawah secara default */
+.latest-works-grid .work-card:nth-child(n+4) {
+  display: none;
+}
+
+/* Tampilkan dengan animasi */
+.latest-works-grid.show-all .work-card:nth-child(n+4) {
+  display: flex;
+  animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ==========================================================================

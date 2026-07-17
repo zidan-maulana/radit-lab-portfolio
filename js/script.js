@@ -108,4 +108,30 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeObserver.observe(section);
   });
 
+  // ==========================================
+  // 6. TOGGLE EXPAND LATEST WORKS (PORTFOLIO)
+  // ==========================================
+  const loadMoreBtn = document.getElementById('loadMoreProjects');
+  const worksGrid = document.querySelector('.latest-works-grid');
+
+  if (loadMoreBtn && worksGrid) {
+    loadMoreBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const isShowingAll = worksGrid.classList.contains('show-all');
+
+      if (isShowingAll) {
+        worksGrid.classList.remove('show-all');
+        loadMoreBtn.classList.remove('active');
+        loadMoreBtn.querySelector('span').textContent = 'Lihat Semua';
+        
+        // Scroll kembali ke atas section portfolio agar user tidak bingung
+        document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
+      } else {
+        worksGrid.classList.add('show-all');
+        loadMoreBtn.classList.add('active');
+        loadMoreBtn.querySelector('span').textContent = 'Sembunyikan';
+      }
+    });
+  }
+
 });

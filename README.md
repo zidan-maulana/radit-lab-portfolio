@@ -1,113 +1,97 @@
-# Portfolio Website – Radit (Network Engineering Projects)
+# Network Engineering - Portofolio
 
-Website portofolio statis untuk mendokumentasikan proyek-proyek jaringan/IT: foto kegiatan, video dokumentasi, deskripsi proyek instalasi/konfigurasi, dan informasi perangkat/metode yang digunakan.
+A professional portfolio website built to showcase network engineering projects, technical experience, field activities, and infrastructure documentation.
 
-## 📌 Tentang Project
+The website serves as a digital profile for presenting expertise in network installation, configuration, troubleshooting, and IT infrastructure projects.
 
-Website ini dibuat sebagai media profesional untuk menunjukkan pengalaman sebagai **Network Engineer/Technician** kepada recruiter, perusahaan, maupun klien potensial.
+## Overview
 
-- **Client:** Radit
-- **Profesi:** Network Engineer/Technician (instalasi & konfigurasi jaringan)
-- **Tipe:** Personal Portfolio Website
-- **Sifat:** Static website (tanpa CMS, tanpa backend, tanpa database)
+This project is a modern personal portfolio website designed for a Network Engineer/Technician.
 
-> **Catatan:** Konten sebelumnya sempat salah asumsi (mengarah ke konteks lab kimia/sains). Sudah dikoreksi ke konteks jaringan/IT per 2026-07-15.
+It focuses on:
+- Project documentation
+- Technical experience showcase
+- Network infrastructure visualization
+- Professional contact and profile presentation
 
-## 🛠️ Tech Stack
+## Features
 
-| Komponen | Tools |
+- Responsive portfolio landing page
+- Project showcase with images and documentation
+- Video documentation integration via YouTube
+- Experience timeline
+- Dynamic content management with Sanity CMS
+- SEO metadata management
+- Mobile-friendly navigation
+- Optimized media handling
+
+## Tech Stack
+
+| Category | Technology |
 |---|---|
-| Desain UI/UX & Implementasi | Antigravity (langsung, tanpa tahap desain terpisah) |
-| Output akhir | HTML / CSS / JS (static) |
-| Hosting | Netlify (prioritas) → GitHub Pages → Vercel |
+| Frontend | HTML, CSS, JavaScript |
+| CMS | Sanity CMS |
+| Content API | Sanity CDN + GROQ Query |
+| Styling | Custom CSS Design System |
+| Deployment | Static Hosting Platform |
 
-Tidak menggunakan React atau framework lain agar pengerjaan cepat dan sesuai budget.
+## Project Structure
 
-> **Catatan:** Rencana awal menggunakan Stitch Design untuk tahap konsep UI/UX dibatalkan. Desain langsung dibuat di Antigravity dengan mengacu pada referensi visual (lihat bagian *Referensi Desain* di bawah).
 
-## 📂 Struktur Halaman (Landing Page)
+radit-lab-portfolio/
+├── assets/ # Images and media assets
+├── css/ # Website styling
+├── js/ # Frontend logic & CMS integration
+├── studio/ # Sanity CMS Studio
+├── index.html # Main website page
+└── README.md
 
-1. Hero
-2. About
-3. Skills / Service
-4. Featured Laboratory Projects (Selected Work)
-5. Experience *(timeline pengalaman/kegiatan lab)*
-6. Testimonials *(opsional — bisa diisi testimoni dosen/rekan tim, atau dilewati jika belum ada)*
-7. Contact
-8. Footer
 
-## 🎨 Referensi Desain
+## CMS Architecture
 
-Struktur & gaya visual mengacu pada referensi portfolio dengan karakteristik:
+The website uses a headless CMS approach:
 
-- **Tema:** Dark theme, dominan hitam-putih (grayscale)
-- **Tipografi:** Heading besar & bold (khususnya di Hero dan Footer)
-- **Navbar:** Logo + menu (Home, About Me, Service, Works, Experience, Testimonials) + tombol CTA
-- **Hero:** Nama/judul besar + tagline singkat + foto
-- **About:** Deskripsi singkat + foto + statistik (angka pencapaian)
-- **Service:** Grid kartu layanan (icon + judul + deskripsi singkat)
-- **Selected Work:** Grid galeri project (thumbnail + judul + kategori)
-- **Experience:** Timeline (tahun + posisi/kegiatan) + foto pendukung
-- **Testimonials:** Foto + kutipan singkat
-- **Penutup:** CTA kontak + footer dengan nama besar berulang
 
-Catatan: konten disesuaikan dari "product designer portfolio" menjadi konteks **dokumentasi proyek laboratorium** (Service → jenis kegiatan/metode lab, Selected Work → proyek lab, Experience → riwayat praktikum/penelitian).
+Sanity Studio
+↓
+Sanity CDN API
+↓
+Frontend Renderer
+↓
+Website Interface
 
-## 🧪 Struktur Tiap Project Card
 
-- Thumbnail
-- Judul
-- Kategori
-- Deskripsi singkat
-- Tombol **View Detail**
-- Tombol **Watch Video**
+This allows content updates such as:
+- Profile information
+- Projects
+- Experience history
+- Images
+- SEO settings
 
-## 📄 Halaman/Modal Detail Project
+without modifying the website source code.
 
-Berisi:
-- Foto besar
-- Deskripsi lengkap
-- Tujuan praktikum
-- Metodologi
-- Hasil
-- Alat yang digunakan
-- Video
-- Gallery
+## Design Direction
 
-## 🖼️ Strategi Media
+- Dark modern aesthetic
+- Minimal grayscale color palette
+- Large typography hierarchy
+- Professional engineering portfolio style
+- Responsive layout for desktop and mobile
 
-**Foto**
-- Format: WebP
-- Lebar: ±1200 px
-- Ukuran maksimal: ±300 KB per file
-- Disimpan langsung di folder project (bukan eksternal)
+## Deployment
 
-**Video**
-- Tidak diupload ke hosting
-- Menggunakan **YouTube (Unlisted) + Embed**
-- Alasan: hemat storage, streaming cepat, tidak membebani hosting, mudah dikelola
-- Google Drive hanya digunakan jika benar-benar diperlukan
+The project can be deployed using any static hosting provider:
 
-## 🚀 Deployment
+- Netlify
+- Vercel
+- GitHub Pages
 
-Prioritas hosting (gratis, HTTPS otomatis, mudah deploy, mudah dihubungkan ke custom domain):
+## Documentation
 
-1. Netlify
-2. GitHub Pages
-3. Vercel
+Additional documentation:
+- `UPDATE GUIDE.md` — content management guide
+- `CHANGELOG.md` — project update history
 
-## 🔄 Update Konten
+## Purpose
 
-Karena tidak ada CMS, lihat detail lengkap di [`UPDATE_GUIDE.md`](./UPDATE_GUIDE.md).
-
-Ringkasan opsi:
-- **Opsi A:** Developer melakukan update manual (biaya kecil, misal Rp25.000/update)
-- **Opsi B:** Klien belajar mengedit sendiri lewat source code
-
-## 📝 Riwayat Perubahan
-
-Lihat [`CHANGELOG.md`](./CHANGELOG.md) untuk catatan perubahan project.
-
-## 💰 Budget
-
-Total budget project: **Rp100.000** (fixed) — karena itu project ini murni static website tanpa backend/CMS/database.
+Built as a professional digital portfolio to demonstrate real-world networking experience, technical capability, and IT infrastructure projects.
